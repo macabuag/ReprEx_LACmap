@@ -22,3 +22,13 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
+## Deploy ----
+# #note: need different token if different account
+# if(!require(rsconnect)) {
+#   install.packages("rsconnect")
+#   library(rsconnect)
+# }
+# rsconnect::setAccountInfo(name='dras', token='0FD3094E6C55215E716CE05631F07470', secret='DZhVcJO687Huf7LhHvtnRdIwGkSj06Ko39TUXk6+')
+# rsconnect::deployApp(file.path("."))
+# y
